@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Памятка для жильцов | Павшино, Железнодорожная 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== НАВИГАЦИЯ ТОЧЬ-В-ТОЧЬ КАК НА IWIRENT ========== -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/iwi-logo.jpg" alt="IWIRENT" class="logo-img">
+            <a href="#">iwirent</a>
+        </div>
+        <button class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ВСПЛЫВАЮЩЕЕ МЕНЮ (ПОЯВЛЯЕТСЯ ПРИ НАЖАТИИ НА БУРГЕР) -->
+<div class="overlay-menu" id="overlayMenu">
+    <div class="overlay-menu-container">
+        <button class="close-menu" id="closeMenu">×</button>
+        <nav class="mobile-nav">
+            <div>
+            <img src="images/iwi-logo.jpg" alt="IWIRENT" class="logo-img-in-overlay">
+             </div>
+            <a href="#rules">Правила проживания</a>
+            <a href="#check">Заселение и выезд</a>
+            <a href="#nuances">Нюансы</a>
+            <a href="#transport">Как добраться</a>
+            <a href="#around">Что вокруг</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Трёхкомнатная квартира<br>Павшино, Железнодорожная 1</h1>
+
+    <!-- КАРУСЕЛЬ ФОТОГРАФИЙ -->
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider-images" id="sliderImages"></div>
+        </div>
+        <button class="slider-btn btn-left" id="prevBtn">‹</button>
+        <button class="slider-btn btn-right" id="nextBtn">›</button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </div>
+
+    <!-- АДРЕС -->
+    <div class="section" id="address">
+        <h2>Адрес и как найти</h2>
+        <div class="address-card">
+            <div class="address">Красногорск, ул. Железнодорожная, д. 1, кв. 6</div>
+            <div>📍 ЖК «Павшино»</div>
+            <div class="map-link">
+                <a href="https://yandex.ru/maps/?text=Красногорск,+Железнодорожная+1" target="_blank">Открыть карту</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПРАВИЛА -->
+    <div class="section" id="rules">
+        <h2>Правила проживания</h2>
+        <ul class="rules-list">
+            <li><strong>Закон о тишине (№ 52-ФЗ):</strong> не шуметь с 22:00 до 08:00</li>
+            <li><strong>Расчётный час 11:00.</strong> Выезд до 11:00</li>
+            <li><strong>Курение в квартире и подъезде запрещено.</strong> Штраф — залог</li>
+            <li>Не вступать в конфликты с соседями</li>
+            <li>Животные — только по согласованию</li>
+            <li>Третьи лица — только по согласованию</li>
+            <li>Уходя, закрывайте краны, окна, выключайте свет</li>
+            <li>При сильном загрязнении — уборка за ваш счёт</li>
+            <li>За порчу имущества — полная стоимость</li>
+            <li>Перед выездом: вымыть посуду, вынести мусор (или +500₽)</li>
+        </ul>
+    </div>
+
+    <!-- ЗАСЕЛЕНИЕ/ВЫЕЗД -->
+    <div class="section" id="check">
+        <h2>Заселение и выезд</h2>
+        <div class="check-group">
+            <div class="check-card">
+                <h3>🗝 Заселение</h3>
+                <p><strong>Сообщите о времени заезда за 40 минут.</strong></p>
+                <p>Представитель встретит и разместит.</p>
+            </div>
+            <div class="check-card">
+                <h3>🚪 Выезд</h3>
+                <p>Накануне сообщите время выезда.</p>
+                <p>При выезде: закрыть дверь, ключ в бокс, сбить пароль, закрыть шторку, <strong>позвонить нам</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- НЮАНСЫ -->
+    <div class="section" id="nuances">
+        <h2>Нюансы</h2>
+        <div class="grid-3cols">
+            <div class="nuance-card"><strong>📺 Телевизор</strong> Smart TV, кнопка Home</div>
+            <div class="nuance-card"><strong>💧 Аквастоп</strong> Красный рычаг под мойкой</div>
+            <div class="nuance-card"><strong>🛋 Диван</strong> Раскладывается ремешком снизу</div>
+            <div class="nuance-card"><strong>🧺 Стиралка</strong> Не включать после 21:00</div>
+            <div class="nuance-card"><strong>🔌 Розетки</strong> Чайник + микроволновка не вместе</div>
+            <div class="nuance-card"><strong>🗑 Мусор</strong> Контейнеры у подъезда</div>
+        </div>
+    </div>
+
+    <!-- КАК ДОБРАТЬСЯ -->
+    <div class="section" id="transport">
+        <h2>Как добраться</h2>
+        <div class="address-card">
+            <p><strong>От метро «Мякинино»:</strong> автобус 356, 357</p>
+            <p><strong>От метро «Строгино»:</strong> автобус 631, 687</p>
+            <p><strong>На машине:</strong> по Волоколамскому шоссе, съезд на Павшино</p>
+        </div>
+    </div>
+
+    <!-- ЧТО ВОКРУГ -->
+    <div class="section" id="around">
+        <h2>Что вокруг</h2>
+        <div class="around-grid">
+            <div class="around-category"><h4>🛒 Магазины</h4><p>Пятёрочка, Магнит, ТРЦ Павшино</p></div>
+            <div class="around-category"><h4>☕ Кафе</h4><p>Кофе и булки, Додо Пицца</p></div>
+            <div class="around-category"><h4>🌳 Парки</h4><p>Парк Павшино, набережная</p></div>
+        </div>
+    </div>
+
+    <!-- КОНТАКТЫ -->
+    <div class="contact-box" id="contacts">
+        <strong>Нужна помощь или что-то сломалось?</strong>
+        <div class="phone-number">+7 (XXX) XXX-XX-XX</div>
+        <div>Имя представителя / Отца</div>
+        <div style="font-size: 14px; opacity: 0.8;">Звоните в любое время</div>
+        <hr>
+        <div style="font-size: 14px;">🚑 Экстренные службы: 112, 101, 103</div>
+    </div>
+
+    <footer>
+        Сохраните эту страницу. При выезде: ключ в бокс, сбросить пароль, позвонить нам.
+    </footer>
+</div>
+
+<script src="js/slider.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
