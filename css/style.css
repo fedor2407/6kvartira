@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+/* Подключаем шрифт Aventa Medium */
+@font-face {
+    font-family: 'Aventa';
+    src: url('fonts/aventa-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; /* Улучшает отображение текста во время загрузки шрифта */
+}
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #ebe8e6;
+font-family: 'Aventa', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
     color: #1a1a1a;
     line-height: 1.4;
+    text-align: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
@@ -20,6 +29,7 @@ body {
     position: sticky;
     background: #ffffff;
     border-bottom: 1px solid #eaeaea;
+    box-shadow: 0px 4px 0px 0px rgb(4 3 3 / 20%);
     z-index: 200;
     margin-left: 40px;
     margin-right: 40px;
@@ -308,7 +318,6 @@ body {
 .slider-container {
     position: relative;
     width: 100%;
-    margin: 48px 0 56px 0;
 }
 
 .slider-wrapper {
@@ -373,7 +382,8 @@ body {
 
 /* Типографика */
 h1 {
-    font-size: 56px;
+    font-size: 24px;
+    color: #4e4a44;
     font-weight: 600;
     letter-spacing: -0.02em;
     margin: 40px 0 16px 0;
@@ -395,7 +405,7 @@ h3 {
 
 /* Карточки */
 .address-card, .rules-list, .check-card, .nuance-card, .around-category {
-    background: #f8f8f8;
+    background: #cfb5194f;
     border-radius: 24px;
     padding: 32px;
 }
@@ -531,11 +541,12 @@ footer {
         padding: 0 16px 48px 16px;
     }
     h1 {
-        font-size: 36px;
+        font-size: 24px;
+        color: #4e4a44;
     }
     h2 {
-        font-size: 28px;
-        margin: 48px 0 24px 0;
+        font-size: 22px;
+        margin: 24px 0 12px 0;
     }
     .check-group {
         grid-template-columns: 1fr;
