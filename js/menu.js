@@ -41,3 +41,27 @@ document.addEventListener('keydown', (e) => {
         toggleMenu();
     }
 });
+
+// ===== АККОРДЕОН ДЛЯ ПРАВИЛ =====
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        
+        header.addEventListener('click', () => {
+            // Закрыть другие открытые элементы (опционально)
+            // Раскомментируйте, если хотите, чтобы открывался только один пункт
+            /*
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('open')) {
+                    otherItem.classList.remove('open');
+                }
+            });
+            */
+            
+            // Переключаем текущий элемент
+            item.classList.toggle('open');
+        });
+    });
+});
